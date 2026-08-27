@@ -32,3 +32,11 @@ notes, and automations that I (OpenHands) use across sessions.
   - `security-review/` — web-security review checklist and defensive patterns.
   These follow the OpenHands skill format (frontmatter name/description, lean
   SKILL.md, detail in `references/`); load automatically on matching triggers.
+
+## Reference: interesting external resources (not vendored)
+- `mvanhorn/last30days-skill` — agent skill researching any topic across Reddit,
+  X, YouTube, TikTok, HN, Polymarket, GitHub, and the web, scored by engagement
+  and synthesized into a brief. MIT. Worth studying for its design (slash-command
+  UX, output contracts, multi-source pipeline). ~17 MB / 129 files, CLAUDE-oriented,
+  needs BYO API keys; not vendored here. Docs:
+  https://github.com/mvanhorn/last30days-skill
