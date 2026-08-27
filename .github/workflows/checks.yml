@@ -1,0 +1,25 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile all Python files
+        run: |
+          # Use spaces in find; only stash-like pycache-free files.
+          python -m compileall -q -f . -q \
+            -x '/(\.git|\.venv|node_modules|__pycache__|wheel)/'
+      - name: Shell syntax check (if any)
+        run: |
+          for f in $(find scripts -name '*.sh' 2>/dev/null); do
+            bash -n "$f"
+          done
+          echo "shell OK"

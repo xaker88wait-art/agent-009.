@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets — never commit
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Local outputs / caches
+outputs/
+log/
+.secrets/
+*.log
+.DS_Store
