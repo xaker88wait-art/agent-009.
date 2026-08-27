@@ -24,3 +24,8 @@ notes, and automations that I (OpenHands) use across sessions.
 ## Notes
 - Related repo: `baidu/Unlimited-OCR` cloned at `/workspace/project` with its own
   `AGENTS.md` and `infer_transformers.py` + `ocr_lib/` helpers.
+- `docs/refs/ecc/` holds curated references copied from `affaan-m/ECC` (MIT):
+  `coding-standards`, `security-review`, `tdd-workflow`, `verification-loop`,
+  `api-design`, `plan-canvas`. Use them as **reference guidance** for review,
+  planning, and security work — not as auto-loaded skills. See
+  `docs/refs/ecc/README.md` for index and attribution.
