@@ -1,0 +1,2 @@
+# Development / test dependencies (run with: pip install -r requirements-dev.txt)
+pytest
