@@ -6,9 +6,6 @@ package is importable, the module will use that instead; both implementations
 strip ``<|det|>`` markers, so the assertions below hold for either one.
 """
 
-import os
-from pathlib import Path
-
 import pytest
 
 import clean_ocr_output as clean
